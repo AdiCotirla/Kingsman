@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Product from "../Components/Product/product"
+import "../Styling/general.css"
 
 
-async function getProductList() {
-    const response = await fetch('https://fakestoreapi.com/products');
+async function getProductList(category) {
+    const response = await fetch('https://fakestoreapi.com/products' + category);
     return response.json();
   }
 
@@ -14,6 +15,7 @@ const ProductListLoading= () => (<h1>Lista de produse se incarca...</h1>)
 class General extends Component {
     constructor(props) {
         super(props);
+        this.category = props.category
         this.state = {
           productList: [],
           isLoading: false,
@@ -21,9 +23,8 @@ class General extends Component {
       }
     componentDidMount(){
         this.setState({isLoading:true})
-        getProductList()
+        getProductList(this.category)
         .then((products)=>{
-            console.log(products)
             this.setState({
             productList : products,
             isLoading : false

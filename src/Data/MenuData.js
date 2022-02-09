@@ -14,10 +14,19 @@ export const MenuData = [
         title: "Men Clothing",
         path: "/MenCloth",
         cName: "MenCloth"
+    },{
+        title: "Services",
+        path: "/Services",
+        cName: "Services"
     },
     {
         title: "Home",
         path: "/",
         cName: "Home"
+    },
+    {
+        title: "Cart",
+        path: "/Cart",
+        cName: "Cart"
     },
 ]

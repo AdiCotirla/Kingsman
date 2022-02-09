@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../../Styling/product.css"
 
 const Product = (props) => {
   return <div className='product' key={props.id}>

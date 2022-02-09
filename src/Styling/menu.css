@@ -1,0 +1,32 @@
+.menu
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    background-color: teal;
+}
+.menu-links{
+    width: 90%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: end;
+}
+.menu-links > a
+{
+    margin-right:3%;
+    text-decoration: none;
+    color: white;
+}
+.menu-links > a:hover
+{
+    background-color: black;
+    transition: 850ms;
+}
+.logo
+{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,19 @@
+.product
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    border: 1px solid black;
+    padding: 3%;
+    margin: 3%;
+    font-size: 1rem;
+}
+
+.product > img 
+{
+    width: 100%;
+    height: 60%;
+}
