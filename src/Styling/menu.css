@@ -1,5 +1,6 @@
 .menu
 {
+    height: 15vh;
     display: flex;
     align-items: center;
     align-content: center;
@@ -12,18 +13,38 @@
     display: flex;
     align-content: center;
     align-items: center;
+    text-align: center;
     justify-content: end;
+    height: 100%;
 }
 .menu-links > a
 {
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
     margin-right:3%;
     text-decoration: none;
     color: white;
+    border-radius: 25px; 
+    padding: 7.5px;
+    letter-spacing: 0.2em;
 }
-.menu-links > a:hover
+.menu-links > a::after
 {
-    background-color: black;
-    transition: 850ms;
+content: '';
+   position: absolute;
+   background-color: white;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: 0;
+   transition: 0.5s;
+}
+.menu-links > a:hover::after
+{
+    width: 100%;
 }
 .logo
 {
