@@ -34,6 +34,10 @@ class Jewelery extends Component {
             this.setState({isLoading: true})
         })
     }
+    componentWillUnmount = () => {
+        this.isComponentMounted = false;
+        window.removeEventListener("resize", this.setDivSizeThrottleable);
+      };
 
     renderJeweleryList(){
         const { productList, isLoading } = this.state;

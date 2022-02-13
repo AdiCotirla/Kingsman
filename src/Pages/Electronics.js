@@ -34,6 +34,10 @@ class Electronics extends Component {
             this.setState({isLoading: true})
         })
     }
+    componentWillUnmount = () => {
+        this.isComponentMounted = false;
+        window.removeEventListener("resize", this.setDivSizeThrottleable);
+      };
 
     renderElectricList(){
         const { productList, isLoading } = this.state;

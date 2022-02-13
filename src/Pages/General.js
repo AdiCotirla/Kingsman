@@ -34,6 +34,10 @@ class General extends Component {
             this.setState({isLoading: true})
         })
     }
+    componentWillUnmount = () => {
+        this.isComponentMounted = false;
+        window.removeEventListener("resize", this.setDivSizeThrottleable);
+      };
 
     renderProductList(){
         const { productList, isLoading } = this.state;

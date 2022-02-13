@@ -33,7 +33,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Menu />
+      <Menu/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/Services" element={<General category="/" onAddToCart={(product) => { handleAddProductToCart(product) }} />} />

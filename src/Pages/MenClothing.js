@@ -34,7 +34,10 @@ class MenClothing extends Component {
             this.setState({isLoading: true})
         })
     }
-
+    componentWillUnmount = () => {
+        this.isComponentMounted = false;
+        window.removeEventListener("resize", this.setDivSizeThrottleable);
+      };
     renderMenClothingList(){
         const { productList, isLoading } = this.state;
         const isEmpty = productList.length === 0;
