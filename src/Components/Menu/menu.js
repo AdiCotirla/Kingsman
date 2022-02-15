@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../Styling/Navbar.css';
 import Dropdown from '../SubMenu/SubMenu';
+import * as GiIcons from "react-icons/gi"
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -30,8 +31,9 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          KINGSMAN
-          <i class='fab fa-firstdraft' />
+          <GiIcons.GiCrownedSkull className='fas'/>
+          Kingsman
+          
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

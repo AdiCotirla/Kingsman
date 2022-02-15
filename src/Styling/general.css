@@ -7,3 +7,21 @@
     align-content: center;
     flex-wrap: wrap;
 }
+.loading
+{       
+    animation: rotation 2s infinite linear;
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
