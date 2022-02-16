@@ -4,4 +4,15 @@
 *{
   -ms-overflow-style: none;  
   scrollbar-width: none;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App
+{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
 }

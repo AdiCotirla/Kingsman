@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product from "../Components/Product/product"
 import "../Styling/general.css"
+import * as BiIcons from "react-icons/bi"
 
 
 async function getProductList(category) {
@@ -9,7 +10,7 @@ async function getProductList(category) {
   }
 
 const JeweleryListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const JeweleryListLoading= () => (<h1>Lista de produse se incarca...</h1>)
+const JeweleryListLoading= () => (<BiIcons.BiLoaderCircle className='loading'/>)
 
 
 class Jewelery extends Component {
@@ -63,7 +64,7 @@ class Jewelery extends Component {
 
 
   render() {
-    return (<div className='Home'>
+    return (<div className='Produse'>
              {this.renderJeweleryList()}
              </div>
      )  

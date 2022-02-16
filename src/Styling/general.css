@@ -1,28 +1,49 @@
-.Home
+.Produse
 {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
-    position: relative;
+    align-self: center;
 }
 .loading
 {       
     animation: rotation 2s infinite linear;
     position: absolute;
-    height: 400px;
-    width: 300px;
-    top: 50%;
-    left: 50%;
+    height: 200px;
+    width: 150px;
+    top: 45%;
     transform: translate(-50%, -50%);
+}
+.add
+{
+  z-index: 999;
+  height: 60px;
+  width: 200px;
+  position: fixed;
+  bottom: 5%;
+  right: -300px;
+  color: white;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: green;
+  transition: 850ms;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  cursor: default;
 }
 @keyframes rotation {
     from {
       transform: rotate(0deg);
+
     }
     to {
       transform: rotate(359deg);
+
     }
   }

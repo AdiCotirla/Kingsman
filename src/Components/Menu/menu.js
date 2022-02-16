@@ -67,6 +67,15 @@ function Navbar() {
               Contact Us
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link
+              to='/Cart'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Cart
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

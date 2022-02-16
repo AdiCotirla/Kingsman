@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Product from "../Components/Product/product"
 import "../Styling/general.css"
-import * as AiIcons from "react-icons/ai"
+import * as BiIcons from "react-icons/bi"
 
 async function getProductList(category) {
     const response = await fetch('https://fakestoreapi.com/products' + category);
@@ -9,7 +9,7 @@ async function getProductList(category) {
   }
 
 const ProductListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const ProductListLoading= () => (<AiIcons.AiOutlineLoading3Quarters className='loading'/>)
+const ProductListLoading= () => (<BiIcons.BiLoaderCircle className='loading'/>)
 
 
 class General extends Component {
@@ -63,7 +63,7 @@ class General extends Component {
 
 
   render() {
-    return (<div className='Home'>
+    return (<div className='Produse'>
              {this.renderProductList()}
              </div>
      )  
