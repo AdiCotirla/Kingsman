@@ -30,7 +30,7 @@ function Navbar(props) {
   };
 
   return (
-    <>
+    <div id='navbar'>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo logo-crown' onClick={closeMobileMenu}>
           Kingsman
@@ -81,7 +81,7 @@ function Navbar(props) {
           </li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 }
 

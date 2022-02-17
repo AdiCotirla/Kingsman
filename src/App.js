@@ -47,7 +47,7 @@ function App() {
       <Menu productCartList={cartList}/>
       <Add/>
         <Routes>
-          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/" element={<><Home/> <General category="/"/></>} />
           <Route exact path="/Services" element={<Services/>} />
           <Route exact path="/GeneralServices" element={<General category="/"  onAddToCart={(product) => { handleAddProductToCart(product) }} />} />
           <Route exact path='/Cart' element={<Cart productCartList={cartList} />} />

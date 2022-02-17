@@ -1,0 +1,33 @@
+.welcome-container
+{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    color: gold;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    overflow: hidden;
+    background-image: url(../assets/kingsman3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moving
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.move
+{
+    margin-top: 30%;
+}
+
