@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Kingsman/static/css/main.d045c67b.css",
-    "main.js": "/Kingsman/static/js/main.95641c7d.js",
+    "main.css": "/Kingsman/static/css/main.3e32e2cb.css",
+    "main.js": "/Kingsman/static/js/main.5053654d.js",
     "static/js/787.3b96f10e.chunk.js": "/Kingsman/static/js/787.3b96f10e.chunk.js",
     "index.html": "/Kingsman/index.html",
-    "main.d045c67b.css.map": "/Kingsman/static/css/main.d045c67b.css.map",
-    "main.95641c7d.js.map": "/Kingsman/static/js/main.95641c7d.js.map",
+    "main.3e32e2cb.css.map": "/Kingsman/static/css/main.3e32e2cb.css.map",
+    "main.5053654d.js.map": "/Kingsman/static/js/main.5053654d.js.map",
     "787.3b96f10e.chunk.js.map": "/Kingsman/static/js/787.3b96f10e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d045c67b.css",
-    "static/js/main.95641c7d.js"
+    "static/css/main.3e32e2cb.css",
+    "static/js/main.5053654d.js"
   ]
 }
