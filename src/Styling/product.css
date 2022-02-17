@@ -7,18 +7,19 @@
     text-align: center;
     width: 20vw;
     height: 40vh;
-    border: 1px solid rgba(128, 128, 128, 0.507);
-    border-radius: 15px;
     padding: 1%;
     margin: 1%;
     font-size: 1rem;
     overflow:scroll;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    transition: 350ms;
 }
 .product:hover
 {
-    -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, 5px 5px 15px 5px rgba(0,0,0,0); 
-    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+   
 }
+
 .product > img 
 {
     object-fit: contain;

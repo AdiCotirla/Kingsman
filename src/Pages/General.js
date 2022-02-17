@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Product from "../Components/Product/product"
 import "../Styling/general.css"
-import * as BiIcons from "react-icons/bi"
+import * as CgIcons from "react-icons/cg"
 
 async function getProductList(category) {
     const response = await fetch('https://fakestoreapi.com/products' + category);
@@ -9,7 +9,7 @@ async function getProductList(category) {
   }
 
 const ProductListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const ProductListLoading= () => (<BiIcons.BiLoaderCircle className='loading'/>)
+const ProductListLoading= () => (<CgIcons.CgSpinnerTwoAlt className='loading'/>)
 
 
 class General extends Component {

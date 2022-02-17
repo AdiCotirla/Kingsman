@@ -14,7 +14,7 @@ const Cart = (props) => {
     const total = getTotalPrice(props.productCartList)
 
     return (
-        <div className="cart">
+        <div className="cart-page">
             <h1>List de produse</h1>
             {props.productCartList.map(productItem => {
                 return (

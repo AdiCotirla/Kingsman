@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import '../../Styling/Navbar.css';
 import Dropdown from '../SubMenu/SubMenu';
 import * as GiIcons from "react-icons/gi"
+import * as AiIcons from "react-icons/ai"
 
-function Navbar() {
+
+function Navbar(props) {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -30,10 +32,9 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <GiIcons.GiCrownedSkull className='fas'/>
+        <Link to='/' className='navbar-logo logo-crown' onClick={closeMobileMenu}>
           Kingsman
-          
+          <GiIcons.GiCrown className='fas crown'/>
         </Link>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -71,9 +72,11 @@ function Navbar() {
             <Link
               to='/Cart'
               className='nav-links'
+              id='cart-number'
               onClick={closeMobileMenu}
             >
-              Cart
+              <AiIcons.AiOutlineShoppingCart className="cart"/>
+              <span className='obiecte'>{props.productCartList.length}</span>
             </Link>
           </li>
         </ul>

@@ -11,13 +11,50 @@
     font-family: 'Kaisei Decol', serif;
   }
 
+  .cart
+  {
+    width: 30px;
+    height: 30px;
+    transform: scaleX(-100%) ;
+  }
+  #cart-number
+  {
+    position: relative;
+  }
+  .obiecte
+  {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 0.8rem;
+  }
+.logo-crown
+{
+  position: relative;
+}
+.crown
+{
+  position: absolute;
+  right: 50%;
+  top: -10px;
+  transform: translate(50%);
+  z-index: 999;
+  color: gold;
+}
  
   .navbar-logo {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    color: #C39108;
+    color: white;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
@@ -48,19 +85,19 @@
   }
   
   .nav-links {
-    color: #C39108;
+    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
   
   .nav-links:hover {
-    background-color: #f8e3aa;
+    background-color: gold;
     border-radius: 4px;
     transition: all 0.2s ease-out;
   }
   
   .fa-bars {
-    color: #C39108;
+    color: white;
   }
   
   .nav-links-mobile {
@@ -75,7 +112,11 @@
     .NavbarItems {
       position: relative;
     }
-  
+    #cart-number
+    {
+      width: 30px;
+      height: 30px;
+    }
     .nav-menu {
       display: flex;
       flex-direction: column;
@@ -88,6 +129,10 @@
     }
   
     .nav-menu.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
       background: #242222;
       left: 0;
       opacity: 1;
@@ -128,7 +173,7 @@
     height: auto;
   }
     .fa-times {
-      color: #C39108;
+      color: white;
       font-size: 2rem;
     }
   
@@ -141,17 +186,8 @@
       width: 80%;
       background-color: #f8e3aa;
       text-decoration: none;
-      color: #C39108;
+      color: white;
       font-size: 1.5rem;
     }
-  
-    .nav-links-mobile:hover {
-      background: #fff;
-       background-color: #f8e3aa;
-      transition: 250ms;
-    }
-  
-    button {
-      display: none;
-    }
+
   }

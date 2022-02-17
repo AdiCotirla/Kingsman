@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Product from "../Components/Product/product"
 import "../Styling/general.css"
-import * as BiIcons from "react-icons/bi"
+import * as CgIcons from "react-icons/cg"
 
 
 async function getProductList(category) {
@@ -10,7 +10,7 @@ async function getProductList(category) {
   }
 
 const ElectricListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const ElectricListLoading= () => (<BiIcons.BiLoaderCircle className='loading'/>)
+const ElectricListLoading= () => (<CgIcons.CgSpinnerTwoAlt className='loading'/>)
 
 
 class Electronics extends Component {

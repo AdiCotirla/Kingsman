@@ -44,7 +44,7 @@ function App() {
   return (
     <Router basename='/Kingsman'>
       <div className="App">
-      <Menu/>
+      <Menu productCartList={cartList}/>
       <Add/>
         <Routes>
           <Route exact path="/" element={<Home/>} />
