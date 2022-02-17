@@ -42,7 +42,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename='/Kingsman'>
       <div className="App">
       <Menu/>
       <Add/>
