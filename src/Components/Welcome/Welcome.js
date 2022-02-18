@@ -1,6 +1,6 @@
 import React from 'react'
 import "../../Styling/welcome.css"
-
+import { Link } from 'react-router-dom'
 export default function Welcome() {
 
     window.onscroll = function() {
@@ -9,16 +9,19 @@ export default function Welcome() {
         moving.style.top = value * 1.05 + "px"
      };
 
-    // function FixMenu() {
-    //    document.getElementById('moving-headers').style.margin = '40px 0 0 0' 
-    // }
-    
   return (
     <div className='welcome-container'>
         <div className='moving' id='moving-header'>
-            <div className='move'>
-        <span className='anunt' >WELCOME TO</span>
-        <h1 className='anunt'>KINGSMAN</h1>
+        <div className='move'>
+        <h1 className='anunt'>Kingsman</h1>
+        <h2 className='anunt'>The golden circle</h2>
+        <Link to='/services'>
+          <button className='button'>
+            Enter the store
+          <div className="button__horizontal"></div>
+	        <div className="button__vertical"></div>
+          </button>
+          </Link>
         </div>
         </div>
     </div>
