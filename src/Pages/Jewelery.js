@@ -11,7 +11,7 @@ async function getProductList(category) {
   }
 
 const JeweleryListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const JeweleryListLoading= () => (<CgIcons.CgSpinnerTwoAlt className='loading'/>)
+const JeweleryListLoading= () => (<><div className='loading-container'><CgIcons.CgSpinnerTwoAlt className='loading'/></div></>)
 
 
 class Jewelery extends Component {

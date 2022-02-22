@@ -9,7 +9,7 @@ async function getProductList(category) {
   }
 
 const ProductListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const ProductListLoading= () => (<CgIcons.CgSpinnerTwoAlt className='loading'/>)
+const ProductListLoading= () => (<><div className='loading-container'><CgIcons.CgSpinnerTwoAlt className='loading'/></div></>)
 
 
 class General extends Component {

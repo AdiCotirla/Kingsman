@@ -10,7 +10,7 @@ async function getProductList(category) {
   }
 
 const ElectricListEmpty = () => (<h1>Lista de produse e goala</h1>)
-const ElectricListLoading= () => (<CgIcons.CgSpinnerTwoAlt className='loading'/>)
+const ElectricListLoading= () => (<><div className='loading-container'><CgIcons.CgSpinnerTwoAlt className='loading'/></div></>)
 
 
 class Electronics extends Component {
