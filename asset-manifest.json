@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/Kingsman/static/css/main.d29248d3.css",
-    "main.js": "/Kingsman/static/js/main.a82e68b8.js",
+    "main.css": "/Kingsman/static/css/main.88fb5fb9.css",
+    "main.js": "/Kingsman/static/js/main.075e0feb.js",
     "static/js/787.3b96f10e.chunk.js": "/Kingsman/static/js/787.3b96f10e.chunk.js",
     "static/media/kingsman1.jpg": "/Kingsman/static/media/kingsman1.8e62f568209347dc7de5.jpg",
+    "static/media/back.jpeg": "/Kingsman/static/media/back.8e797f38588fdd07ce27.jpeg",
+    "static/media/electronics.jpg": "/Kingsman/static/media/electronics.20b45acf05b38ed420bc.jpg",
+    "static/media/kingsman3.jpg": "/Kingsman/static/media/kingsman3.a21cceef17e20da3afad.jpg",
+    "static/media/jewelry.jpg": "/Kingsman/static/media/jewelry.f6764503f2e37214ccd5.jpg",
+    "static/media/general.jpg": "/Kingsman/static/media/general.466ffa0d93e5271e7290.jpg",
+    "static/media/clothing.jpg": "/Kingsman/static/media/clothing.64dcb02a10f575351a45.jpg",
     "index.html": "/Kingsman/index.html",
-    "main.d29248d3.css.map": "/Kingsman/static/css/main.d29248d3.css.map",
-    "main.a82e68b8.js.map": "/Kingsman/static/js/main.a82e68b8.js.map",
+    "main.88fb5fb9.css.map": "/Kingsman/static/css/main.88fb5fb9.css.map",
+    "main.075e0feb.js.map": "/Kingsman/static/js/main.075e0feb.js.map",
     "787.3b96f10e.chunk.js.map": "/Kingsman/static/js/787.3b96f10e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d29248d3.css",
-    "static/js/main.a82e68b8.js"
+    "static/css/main.88fb5fb9.css",
+    "static/js/main.075e0feb.js"
   ]
 }
