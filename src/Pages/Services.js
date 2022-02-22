@@ -1,12 +1,11 @@
 import React from 'react'
-import { MenuItems } from '../Data/MenuItems'
-import { Link } from "react-router-dom"
+import Category from '../Components/Category/category'
+import Shop from '../Components/Shop/Shop'
+
+
 export default function Services() {
-  return (
-    MenuItems.map((items,index) => {
-      return <div key={index}>
-        <Link to={items.path}>{items.title}</Link>
-      </div>
-    })
-  )
+  return <>
+  <Shop/>
+  <Category/>
+  </>
 }
