@@ -7,6 +7,9 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+}
+.container-all
+{
     background-image: url(../assets/back.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,8 +40,7 @@
     height: 25vh;
     font-size: 2rem;
     font-family: 'Kaisei Decol', serif;
-    color: black;
-    background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 74%, #4e4e4e 99%, #383838 100%, #1b1b1b 100%); /* FF3.6-15 */
+    color: white;
 }
 .general,
 .jewelery,
@@ -89,10 +91,10 @@
 {
     background-image: url(../assets/general.jpg);
 }
-.general,
-.jewelery
+.electronics,
+.clothing
 {
-    margin-top: 5%;
+    margin-bottom: 200px;
 }
 .general > a,
 .jewelery > a,
@@ -126,6 +128,10 @@
         margin-top: 10%;
         width: 90%;
         height: 60vh;
+    }
+    .clothing
+    {
+        margin-bottom: 0px;
     }
     
 }

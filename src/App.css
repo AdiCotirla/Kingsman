@@ -17,8 +17,19 @@ html
   min-height: 100vh;
   min-width: 100vw;
 }
+.arrow-up
+{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  height: 35px;
+  width: 35px;
+  z-index: 9999999;
+  color:#aca99d
+}
 .App
 {
+  position: relative;
   height: 100%;
   width: 100vw;
   display: flex;

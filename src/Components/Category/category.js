@@ -5,6 +5,7 @@ import "../../Styling/category.css"
 
 export default function Category() {
   return (<>
+  <div className='container-all'>
   <div className='infos'>
     <span>Payment on delivery | Parcel check | Free refund </span>
   </div>
@@ -17,7 +18,9 @@ export default function Category() {
                     <div key={index} className={items.cName}>
                         <Link to={items.path}>{items.title}</Link>
                       </div>)})}
-    </div></>
+    </div>
+    </div>
+    </>
   )
 }
 
