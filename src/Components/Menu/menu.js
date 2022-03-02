@@ -4,6 +4,8 @@ import '../../Styling/Navbar.css';
 import Dropdown from '../SubMenu/SubMenu';
 import * as GiIcons from "react-icons/gi"
 import * as AiIcons from "react-icons/ai"
+import * as BsIcons from "react-icons/bs"
+
 
 
 function Navbar(props) {
@@ -77,6 +79,17 @@ function Navbar(props) {
             >
               <AiIcons.AiOutlineShoppingCart className="cart"/>
               <span className='obiecte'>{props.productCartList.length}</span>
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/Favorite'
+              className='nav-links'
+              id='cart-number'
+              onClick={closeMobileMenu}
+            >
+              <BsIcons.BsHeart className="menu-heart"/>
+              <span className='obiecte'>{props.FavoriteProductList.length}</span>
             </Link>
           </li>
         </ul>

@@ -59,6 +59,9 @@ class Jewelery extends Component {
                 image = {productItem.image}
                 onAddToCart={() => {
                     this.props.onAddToCart(productItem)
+                }}
+                onAddToFavorite={() => {
+                    this.props.onAddToFavorite(productItem)
                 }}/>)
         });
     }

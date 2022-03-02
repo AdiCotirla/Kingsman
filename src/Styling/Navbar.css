@@ -39,6 +39,12 @@
     border-radius: 50%;
     font-size: 0.8rem;
   }
+  .menu-heart
+{
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
 .logo-crown
 {
   position: relative;
@@ -98,6 +104,7 @@
     background-color: gold;
     border-radius: 4px;
     transition: all 0.2s ease-out;
+    color: black;
   }
   
   .fa-bars {

@@ -16,23 +16,24 @@ import Services from './Pages/Services';
 import Add from './Components/Add/Add';
 import Footer from './Components/Footer/Footer';
 import * as BsIcons from "react-icons/bs"
+import Favorite from './Pages/favorite';
 
 
 
 function App() {
   const [cartList, setCartList] = useState([]);
-
-  const ShowArrow =()=>{
+  const [favoriteList, setFavoriteList] = useState([]);
+  const ShowArrow = () => {
+    let arrow = document.getElementById("arrow-up")
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      let arrow = document.getElementById("arrow-up").style.visibility = "visible"
+      arrow.style.visibility = "visible"
     } else {
-      let arrow = document.getElementById("arrow-up").style.visibility = "hidden"
+      arrow.style.visibility = "hidden"
     }
   }
-  window.onscroll = function() {ShowArrow()};
+  window.onscroll = function () { ShowArrow() };
 
-  const scrollTop = () =>
-  {
+  const scrollTop = () => {
     window.scroll({
       top: 0,
       behavior: 'smooth'
@@ -49,24 +50,42 @@ function App() {
     }
 
     setCartList(newList);
-    
+
+  }
+  const handleAddProductToFavorite = (product) => {
+    const newFavoriteList = [...favoriteList]
+    const index = newFavoriteList.findIndex(item => item.id === product.id);
+    if (index !== -1) {
+      for (var i = 0; i < newFavoriteList.length; i++) {
+        if (newFavoriteList[i].id === product.id) {
+          newFavoriteList.splice(i, 1);
+        }
+      }
+    }
+    else {
+      newFavoriteList.push(product);
+    }
+
+    setFavoriteList(newFavoriteList);
+    console.log(newFavoriteList)
   }
 
   return (
     <Router basename='/Kingsman'>
       <div className="App">
-      <Menu productCartList={cartList}/>
-      <Add/>
+        <Menu productCartList={cartList} FavoriteProductList = {favoriteList}/>
+        <Add />
         <Routes>
-          <Route exact path="/" element={<><Home/></>} />
-          <Route exact path="/Services" element={<><Services/> <Footer/></>} />
-          <Route exact path="/GeneralServices" element={ <><General category="/"  onAddToCart={(product) => { handleAddProductToCart(product) }} /> <Footer/></>} />
-          <Route exact path='/Cart' element={<><Cart productCartList={cartList} /> <Footer/></>} />
-          <Route exact path="/electronics" element={<><Electronics category="/category/electronics" onAddToCart={(product) => { handleAddProductToCart(product) }}/> <Footer/> </>} />
-          <Route exact path="/MenCloth" element={<><MenClothing category="/category/men's clothing" onAddToCart={(product) => { handleAddProductToCart(product) }} /><Footer/> </>} />
-          <Route exact path="/jewelery" element={<><Jewelery category="/category/jewelery" onAddToCart={(product) => { handleAddProductToCart(product) }} /> <Footer/> </>} />
+          <Route exact path="/" element={<><Home /></>} />
+          <Route exact path="/Services" element={<><Services /> <Footer /></>} />
+          <Route exact path="/GeneralServices" element={<><General category="/" onAddToFavorite={(product) => { handleAddProductToFavorite(product) }} onAddToCart={(product) => { handleAddProductToCart(product) }} /> <Footer /></>} />
+          <Route exact path='/Cart' element={<><Cart productCartList={cartList} /> <Footer /></>} />
+          <Route exact path='/Favorite' element = {<><Favorite FavoriteProductList = {favoriteList}/> <Footer/></>}/>
+          <Route exact path="/electronics" element={<><Electronics category="/category/electronics" onAddToFavorite={(product) => { handleAddProductToFavorite(product) }} onAddToCart={(product) => { handleAddProductToCart(product) }} /> <Footer /> </>} />
+          <Route exact path="/MenCloth" element={<><MenClothing category="/category/men's clothing" onAddToFavorite={(product) => { handleAddProductToFavorite(product) }} onAddToCart={(product) => { handleAddProductToCart(product) }} /><Footer /> </>} />
+          <Route exact path="/jewelery" element={<><Jewelery category="/category/jewelery" onAddToFavorite={(product) => { handleAddProductToFavorite(product) }} onAddToCart={(product) => { handleAddProductToCart(product) }} /> <Footer /> </>} />
         </Routes>
-        <BsIcons.BsFillArrowUpCircleFill id="arrow-up" className='arrow-up' onClick={()=>{scrollTop()}}/>
+        <BsIcons.BsFillArrowUpCircleFill id="arrow-up" className='arrow-up' onClick={() => { scrollTop() }} />
       </div>
     </Router>
   )
