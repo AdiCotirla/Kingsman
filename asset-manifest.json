@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kingsman/static/css/main.47539386.css",
-    "main.js": "/Kingsman/static/js/main.62103813.js",
+    "main.css": "/Kingsman/static/css/main.80531d9c.css",
+    "main.js": "/Kingsman/static/js/main.a0a7e8ae.js",
     "static/js/787.3b96f10e.chunk.js": "/Kingsman/static/js/787.3b96f10e.chunk.js",
     "static/media/back.jpeg": "/Kingsman/static/media/back.f12e0514823a52d71488.jpeg",
     "static/media/kingsman1.jpg": "/Kingsman/static/media/kingsman1.8e62f568209347dc7de5.jpg",
@@ -12,12 +12,12 @@
     "static/media/jewelry.jpg": "/Kingsman/static/media/jewelry.c8d2150dac3398bbee52.jpg",
     "static/media/clothing.jpg": "/Kingsman/static/media/clothing.64dcb02a10f575351a45.jpg",
     "index.html": "/Kingsman/index.html",
-    "main.47539386.css.map": "/Kingsman/static/css/main.47539386.css.map",
-    "main.62103813.js.map": "/Kingsman/static/js/main.62103813.js.map",
+    "main.80531d9c.css.map": "/Kingsman/static/css/main.80531d9c.css.map",
+    "main.a0a7e8ae.js.map": "/Kingsman/static/js/main.a0a7e8ae.js.map",
     "787.3b96f10e.chunk.js.map": "/Kingsman/static/js/787.3b96f10e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47539386.css",
-    "static/js/main.62103813.js"
+    "static/css/main.80531d9c.css",
+    "static/js/main.a0a7e8ae.js"
   ]
 }
